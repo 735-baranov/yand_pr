@@ -3,29 +3,34 @@ const app = require('express')()
 const host = '127.0.0.1'
 const port = 7000
 
-app.get('/home', (req, res) => {
+app.get('/auth', (req, res) => {
   res.status(200).type('text/plain')
-  res.send('Home page')
+  res.send('Auth page')
 })
 
-app.get('/about', (req, res) => {
+app.get('/chats', (req, res) => {
   res.status(200).type('text/plain')
-  res.send('About page')
+  res.send('Chats page')
 })
 
-app.post('/api/admin', (req, res) => {
+app.get('/cur_chat', (req, res) => {
   res.status(200).type('text/plain')
-  res.send('Create admin request')
+  res.send('Cur chat page')
 })
 
-app.post('/api/user', (req, res) => {
+app.get('/profile', (req, res) => {
   res.status(200).type('text/plain')
-  res.send('Create user request')
+  res.send('profile page')
+})
+
+app.get('/reg', (req, res) => {
+    res.status(200).type('text/plain')
+    res.send('reg page')
 })
 
 app.use((req, res, next) => {
   res.status(404).type('text/plain')
-  res.send('Not found')
+  res.send('_404 page')
 })
 
 app.listen(port, host, function () {
