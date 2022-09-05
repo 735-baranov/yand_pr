@@ -1,0 +1,22 @@
+{
+  "name": "yand_pr",
+  "version": "1.0.0",
+  "description": "test sprint_1",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/735-baranov/yand_pr.git"
+  },
+  "author": "735-baranov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/735-baranov/yand_pr/issues"
+  },
+  "homepage": "https://github.com/735-baranov/yand_pr#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
